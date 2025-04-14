@@ -2,6 +2,10 @@
   "name": "atomic-mysql",
   "version": "0.0.1",
   "description": "MySQL Database module for Brobridge Atomic",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrobridgeOrg/atomic-mysql.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +14,7 @@
     "node-red",
     "atomic"
   ],
-  "author": "Fred Chien <fred@brobridge.com>",
+  "author": "Jhe Sue <jhe@brobridge.com>",
   "license": "APL",
   "node-red": {
     "nodes": {
