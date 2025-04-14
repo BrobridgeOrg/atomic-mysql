@@ -1,4 +1,4 @@
-# atomic-oracle
+# atomic-postgresql
 
 Oracle Module for Brobridge Atomic (Compatible with Node-RED).
 
