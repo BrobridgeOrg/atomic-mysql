@@ -1,10 +1,13 @@
 {
-  "name": "atomic-mysql",
+  "name": "@brobridge/atomic-mysql",
   "version": "0.0.2",
   "description": "MySQL Database module for Brobridge Atomic",
   "repository": {
     "type": "git",
     "url": "https://github.com/BrobridgeOrg/atomic-mysql.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
