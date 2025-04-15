@@ -1,4 +1,4 @@
-# atomic-postgresql
+# atomic-mysql
 
 MySQL Module for Brobridge Atomic (Compatible with Node-RED).
 
