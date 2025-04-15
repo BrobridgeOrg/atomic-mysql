@@ -3,7 +3,7 @@ module.exports = {
 };
 
 function init(RED) {
-	var prefix = '/nodes/atomic-mysql/apis';
+	var prefix = '/nodes/@brobridge/atomic-mysql/apis';
 
 	RED.httpAdmin.post(prefix + '/execute', RED.auth.needsPermission('flows.write'), function(req, res) {
 		let connection = RED.nodes.getNode(req.body.connection);

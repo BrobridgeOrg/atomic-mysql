@@ -1,6 +1,6 @@
 # atomic-postgresql
 
-Oracle Module for Brobridge Atomic (Compatible with Node-RED).
+MySQL Module for Brobridge Atomic (Compatible with Node-RED).
 
 ## Commercial Support
 
