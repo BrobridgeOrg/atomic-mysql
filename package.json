@@ -1,6 +1,6 @@
 {
   "name": "@brobridge/atomic-mysql",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "MySQL Database module for Brobridge Atomic",
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "author": "Jhe Sue <jhe@brobridge.com>",
   "license": "APL",
   "node-red": {
+    "version": ">=2.0.0",
     "nodes": {
       "mysql-connection": "mysql-connection.js",
       "mysql-execute": "mysql-execute.js"
@@ -27,5 +28,8 @@
   },
   "dependencies": {
     "mysql2": "^3.14.0"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

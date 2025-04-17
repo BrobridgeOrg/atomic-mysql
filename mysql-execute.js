@@ -113,13 +113,14 @@ module.exports = function(RED) {
 					text: e.toString()
 				});
 
-				/*
-				node.send({
-					error: e.toString()
-				})
-				*/
-
-				node.error(e, msg);
+				if (!msg.error) {
+					msg.error = {
+						code: e.code || null,
+						message: e.message || null,
+						stack: e.stack || null,
+					};
+				}
+				node.error(e);
 				if (this.conn) {
 					try{
 						await this.conn.release();
@@ -129,6 +130,7 @@ module.exports = function(RED) {
 						//console.warn("Connection might already be closed.");
 					}
 				}
+				done(e)
 			}
 		});
 

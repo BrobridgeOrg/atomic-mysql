@@ -193,12 +193,9 @@
 						if (!data.success) {
 							$('#node-playground-result-message')
 								.append($('<div>').text('Finished with error.'))
-								.append($('<div>').text([
-									'Msg ' + data.error.number,
-									'Level ' + data.error.class,
-									'State ' + data.error.state,
-								].join(',')))
-								.append($('<div>').text('Line ' + data.error.lineNumber + ': ' + data.error.message))
+								.append($('<div>').text('Msg: ' + data.error.message))
+								.append($('<div>').text('Code: ' + data.error.code))
+								.append($('<div>').text('Stack: ' + data.error.stack))
 								.show();
 
 							return;

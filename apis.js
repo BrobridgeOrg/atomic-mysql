@@ -28,9 +28,9 @@ function init(RED) {
 				res.json({
 					success: false,
 					error: {
-						code: e.code,
-						message: e.message,
-						stack: e.stack
+						code: e.code || null,
+						message: e.message || null,
+						stack: e.stack || null,
 					}
 				});
 			}
