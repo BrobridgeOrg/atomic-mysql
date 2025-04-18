@@ -78,6 +78,7 @@ module.exports = class Client extends events.EventEmitter {
 	}
 
 	async disconnect() {
+		clearTimeout(this.timer);
 		try {
 			await this.pool.end();
 		} catch (e) {
