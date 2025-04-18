@@ -1,6 +1,6 @@
 {
   "name": "@brobridge/atomic-mysql",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "MySQL Database module for Brobridge Atomic",
   "repository": {
     "type": "git",
